@@ -3,12 +3,15 @@ public class Stack {
 
 	
 	Node top = null; 
+	Node front = null;
+	Node rear = null;
 	//initialise : set top to null
-	public void initialise() {
+/*	public void initialise() {
 		top = null;
-		
-		
-	}
+	}	
+*/
+	
+	
 	//empty() : return(top =0)
 	public boolean empty() {
 return top == null;
@@ -22,7 +25,7 @@ return top == null;
 		System.out.println(top.getItem());
 	}
 	
-	//Object pop() : 1- if !empty , 2- x = topdata , top = top.next & return x
+	//Object pop() : 1- if !empty , 2- x = top data , top = top.next & return x
 	//3- end if
 	public Node pop() {
 		Node x = null ; //declare x since x isn't found
@@ -39,4 +42,9 @@ return top == null;
 	}
 	
 	
+		
+		
+		
+	
 }
+
